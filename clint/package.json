@@ -1,0 +1,24 @@
+{
+  "name": "clint",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnandMurugan5/project_web_firebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnandMurugan5/project_web_firebase/issues"
+  },
+  "homepage": "https://github.com/AnandMurugan5/project_web_firebase#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "bootstrap-icons": "^1.4.1",
+    "firebase": "^8.5.0"
+  }
+}

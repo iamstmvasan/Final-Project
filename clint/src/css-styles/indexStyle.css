@@ -1,0 +1,22 @@
+/* Navbar */
+.pis-icon{
+    margin-right: 15px;
+}
+#nav-section{
+    background-color: #007bff;    
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+.pis{
+    font-size: 2rem;
+}
+.custom-link{
+    font-weight: bold;
+}
+
+/* body section */
+
+#body-section{
+    margin: 20% 45%;
+    color: #c9d6df;
+}
