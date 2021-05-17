@@ -1,22 +1,18 @@
-/* Navbar */
-.pis-icon{
-    margin-right: 15px;
+body{
+    text-align: center;
 }
-#nav-section{
-    /* background-color: #a7bbc7;     */
+.div-heading{
+    background-color: #393e46;
     color: #fff;
-    font-family: 'Merriweather', serif;
+    font-family: 'Monda', sans-serif;
+    padding: 10px;
+    
 }
-.pis{
-    font-size: 2rem;
-}
-.custom-link{
-    font-weight: bold;
+#card-section{
+    margin-top: 15%;
+    
 }
 
-/* body section */
-
-#body-section{
-    margin: 20% 45%;
-    color: #a7bbc7;
+.fas{
+    margin-right: 10px;
 }

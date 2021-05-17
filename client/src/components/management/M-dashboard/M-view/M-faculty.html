@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Admin Faculty Section</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link rel="stylesheet" href="/client/src/components/management/M-dashboard/dashboard.css">
+    <link rel="stylesheet" href="/client/src/components/management/M-dashboard/dashboard.rtl.css">
+    <link rel="stylesheet" href="/client/src/components/management/M-dashboard/style.css">
+    <script src="/client/src/components/management/M-dashboard/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/c1d2d99c57.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/client/src/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+    
+    <button type="button" class="btn btn-outline-primary">
+      Management Dashboard
+    
+    </button>
+    
+  </a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="/index.html">
+        
+        <button type="button" class="btn btn-outline-primary"><i class="fas fa-sign-out-alt"></i>Sign out</button>
+      </a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/client/src/components/management/M-dashboard/M-dash.html">
+              <!-- <span data-feather="home"></span> -->
+              <i class="fas fa-user-circle"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./M-course.html">
+              <!-- <span data-feather="file"></span> -->
+              <i class="fas fa-book-reader"></i>
+              Course
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./M-faculty.html">
+              <!-- <span data-feather="pen-tool"></span> -->
+              <i class="fas fa-chalkboard-teacher"></i>
+              Faculty
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./M-student.html">
+              <i class="fas fa-user-graduate"></i>
+              Student
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./M-notification.html">
+              <i class="fas fa-bell"></i>
+              Notification
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./M-fees.html">
+              <i class="fas fa-rupee-sign"></i>
+              Fees
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>View Form</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./M-faculty-leave-form.html">
+              <i class="far fa-eye"></i>
+              Faculty leave form
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./M-stud-feedback.html">
+              <i class="far fa-eye"></i>
+              Student feedback
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" style="align-items: center;">
+      
+      <!-- Faculty dashboard -->
+      <section >
+        <div class="container"> 
+          <!-- <button type="button" id="M-faculty" class="btn btn-outline-light disabled">Faculty</button>
+          <button type="button"  class="btn btn-outline-light btn-block disabled">Faculty</button>         -->
+          <button class="btn btn-primary btn-block "  type="button">Faculty Section</button>
+          <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+              <form action="">
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fas fa-id-card-alt"></i> </span>
+                  </div>
+                  <input name="" class="form-control" placeholder="Faculty Id" type="text">
+                </div> <!-- form-group// -->
+
+                <span class="form-group" style="margin:0 40px;">
+                  <button type="submit" class="btn btn-primary"><i class="far fa-eye"></i> View  </button>
+                </span> <!-- form-group// -->
+
+                <span class="form-group">
+                  <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete  </button>
+                </span> <!-- form-group// -->
+
+              </form>
+              <p class="divider-text">
+                <span class="bg-light">OR</span>
+            </p>
+              
+              <h4 class="card-title mt-3 text-center" style="margin-bottom: 20px;">Add Faculty</h4>
+          
+              <form>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fas fa-id-card-alt"></i> </span>
+                  </div>
+                  <input name="" class="form-control" placeholder="Faculty Id" type="text">
+                </div> <!-- form-group// -->
+
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                  </div>
+                  <input name="" class="form-control" placeholder="Faculty name" type="text">
+                </div> <!-- form-group// -->
+            
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                  </div>
+                  <input name="" class="form-control" placeholder="Email address" type="email">
+                </div> <!-- form-group// -->
+
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                  </div>
+                  <select class="custom-select" style="max-width: 120px;">
+                    <option selected="">+91</option>
+                  </select>
+                  <input name="" class="form-control" placeholder="Phone number" type="text">
+                </div> <!-- form-group// -->
+
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                  </div>
+                  <select class="form-control" >
+                    <option selected=""> Select Class</option>
+                    <option>1 std</option>
+                    <option>2 std</option>
+                    <option>3 std</option>
+                  </select>
+                </div> <!-- form-group end.// -->
+
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                  </div>
+                  <input class="form-control" placeholder="Create password" type="password">
+                </div> <!-- form-group// -->
+    
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                  </div>
+                  <input class="form-control" placeholder="Repeat password" type="password">
+                </div> <!-- form-group// -->                                      
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success cbtn1"><i class="fas fa-user-plus"></i> Add Faculty  </button>
+                  <button type="reset" class="btn btn-warning "><i class="fas fa-undo"></i> Reset  </button>
+                </div> <!-- form-group// -->      
+                                                                            
+              </form>
+            </article>
+          </div> <!-- card.// -->
+        </div> 
+        <!--container end.//-->
+      </section>
+      
+
+    </main>
+  </div>
+</div>
+
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="dashboard.js"></script>
+  </body>
+</html>
