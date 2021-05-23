@@ -49,6 +49,30 @@
         }
       }
     </style>
+    
+    <!-- <script>
+      function validateForm()  
+      {  
+        var email=document.myform.email.value;  
+        var password=document.myform.password.value;  
+          
+        if (email==null || email==""){  
+          alert("email can't be blank");  
+         
+        }else if(password == null || password == ""){  
+          alert("Password can't be blank");  
+          
+          }  
+          
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+          alert("Please enter a valid e-mail address");
+           
+          }  
+      }  
+    </script> -->
 
     
     <!-- Custom styles for this template -->
@@ -62,13 +86,14 @@
             <i class="fas fa-user-graduate fa-3x"></i>
          </a>
          <h1 class="h3 mb-3 fw-normal">Student sign in</h1>
-         <form action="/client/src/components/stud_details/S-dashboard/S-dash.html">
+         
+        <form name="myform"   action="/client/src/components/stud_details/S-dashboard/S-dash.html" onsubmit="validateForm();">  
          <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
             <!-- <label for="floatingInput">Email address</label> -->
          </div>
          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
             <!-- <label for="floatingPassword">Password</label> -->
          </div>
       
