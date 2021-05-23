@@ -58,23 +58,16 @@
 
     <script src="./M-View JS/M-Course-JS.js"></script>
 
+    
+
     <script>
-      $(document).ready(function () {
-        $.ajax({
-          url: "http://localhost:5050/createCourse",
-          type: "POST",
-          crossDomain: true,
-          data: {
-            courseId: 303,
-            courseName: "Tamil Story",
-            courseClass: "4 std",
-          },
-          contentType: "application/json",
-          success: function (data) {
-            console.log(ko.toJSON(data));
-          },
-        });
-      });
+      
+        // $.post("http://localhost:5050/createCourse", {
+        //   "courseId": 305,
+        //   "courseName": "Social Story",
+        //   "courseClass": "3 std",
+        // });
+      
     </script>
   </head>
   <body>
@@ -208,7 +201,7 @@
               </button>
               <div class="card bg-light">
                 <article class="card-body mx-auto" style="max-width: 400px">
-                  <form action="">
+                  <form id="viewCourse">
                     <div class="form-group input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
@@ -216,7 +209,8 @@
                         </span>
                       </div>
                       <input
-                        name=""
+                        id = "courseId"
+                        
                         class="form-control"
                         placeholder="Course Id"
                         type="text"
@@ -225,21 +219,21 @@
                     <!-- form-group// -->
 
                     <span class="form-group">
-                      <button type="submit" class="btn btn-primary">
+                      <button type="submit" class="btn btn-primary" >
                         <i class="far fa-eye"></i>
                       </button>
                     </span>
                     <!-- form-group// -->
 
                     <span class="form-group" style="margin: 0 40px">
-                      <button type="submit" class="btn bg-secondary">
+                      <button  class="btn bg-secondary">
                         <i class="fas fa-edit" style="color: aliceblue"></i>
                       </button>
                     </span>
                     <!-- form-group// -->
 
                     <span class="form-group">
-                      <button type="submit" class="btn btn-danger">
+                      <button  class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i>
                       </button>
                     </span>
@@ -256,7 +250,7 @@
                     Add Course
                   </h4>
 
-                  <form>
+                  <form id="createCourse">
                     <div class="form-group input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
@@ -264,7 +258,7 @@
                         </span>
                       </div>
                       <input
-                        name=""
+                        name="courseId"
                         class="form-control"
                         placeholder="Course Id"
                         type="text"
@@ -279,7 +273,7 @@
                         </span>
                       </div>
                       <input
-                        name=""
+                        name="courseName"
                         class="form-control"
                         placeholder="Course name"
                         type="text"
@@ -293,7 +287,7 @@
                           <i class="fa fa-building"></i>
                         </span>
                       </div>
-                      <select class="form-control">
+                      <select class="form-control" name="courseClass">
                         <option selected="">Select Class</option>
                         <option>1 std</option>
                         <option>2 std</option>
@@ -304,9 +298,10 @@
 
                     <div class="form-group">
                       <button
+                        
                         type="submit"
                         class="btn btn-success"
-                        onclick="userAction()"
+                        
                       >
                         <i class="fas fa-folder-plus"></i> Add Course
                       </button>
